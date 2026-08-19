@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cmgxvqdcugoq2"]
+
+[ext_resource type="PackedScene" uid="uid://fommi7ye0jhf" path="res://scenes/player.tscn" id="1_o5qli"]
+
+[node name="Main" type="Node2D" unique_id=2077153114]
+
+[node name="Player" parent="." unique_id=1059513943 instance=ExtResource("1_o5qli")]
+position = Vector2(86, 60)
+motion_mode = 1
+moveSpeed = 150.0
