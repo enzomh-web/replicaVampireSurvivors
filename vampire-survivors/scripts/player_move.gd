@@ -1,15 +1,18 @@
 extends CharacterBody2D
 
-@export var moveSpeed : float = 500
-var charDirection : Vector2
+@export_category("Movimentação")
+@export var move_speed : float = 80
+@export var friction : float = 150
+@export var acceleration : float = 250
+
+var char_direction : Vector2
 
 func _physics_process(delta):
-	charDirection.x = Input.get_axis("move_left", "move_right")
-	charDirection.y = Input.get_axis("move_up", "move_down")
+	char_direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	
-	if charDirection:
-		velocity = charDirection * moveSpeed
+	if char_direction != Vector2.ZERO:
+		velocity = velocity.move_toward(char_direction * move_speed, acceleration * delta)
 	else:
-		velocity = velocity.move_toward(Vector2.ZERO, moveSpeed)
-	
+		velocity = velocity.move_toward(Vector2.ZERO, friction * delta)
+		
 	move_and_slide()

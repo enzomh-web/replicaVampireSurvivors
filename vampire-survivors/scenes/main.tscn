@@ -7,4 +7,3 @@
 [node name="Player" parent="." unique_id=1059513943 instance=ExtResource("1_o5qli")]
 position = Vector2(86, 60)
 motion_mode = 1
-moveSpeed = 150.0
