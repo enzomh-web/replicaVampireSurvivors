@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://3eopitwhthjj"]
+
+[sub_resource type="DrawableTexture2D" id="DrawableTexture2D_svhir"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xvf33"]
+size = Vector2(10, 10)
+
+[node name="Area2D" type="Area2D" unique_id=1363254839]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=370586918]
+position = Vector2(9.536743e-07, -9.536743e-07)
+scale = Vector2(0.15625, 0.15625)
+texture = SubResource("DrawableTexture2D_svhir")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=623010179]
+shape = SubResource("RectangleShape2D_xvf33")

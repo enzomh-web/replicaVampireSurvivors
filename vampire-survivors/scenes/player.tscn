@@ -1,18 +1,18 @@
 [gd_scene format=3 uid="uid://fommi7ye0jhf"]
 
-[ext_resource type="Texture2D" uid="uid://b3v0wi8cwjke1" path="res://icon.svg" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://bm6k0wfvqax2c" path="res://scripts/player_move.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://ckqku5xlloa34" path="res://assets/characters/cesar.png" id="2_qlg0r"]
 [ext_resource type="Script" uid="uid://b333lgq02alw2" path="res://scripts/weapons/Weapon.gd" id="3_qlg0r"]
 [ext_resource type="PackedScene" uid="uid://biq1rnnsd03hm" path="res://scenes/projectile.tscn" id="4_tuyoq"]
 [ext_resource type="Script" uid="uid://c2mty8w0giur6" path="res://scripts/weapons/WeaponData.gd" id="5_fjrip"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5yk5c"]
-size = Vector2(16, 16)
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_ebum8"]
+points = PackedVector2Array(-6, 30, 32, 14, 18, -8, -17, -8, -29, 3)
 
 [sub_resource type="Resource" id="Resource_5yk5c"]
 script = ExtResource("5_fjrip")
 damage = 5.0
-cooldown = 5.0
+cooldown = 2.0
 speed = 50.0
 projectile_count = 6
 projectile_interval = 0.2
@@ -22,13 +22,13 @@ metadata/_custom_type_script = "uid://c2mty8w0giur6"
 script = ExtResource("1_g2els")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1425793046]
-scale = Vector2(0.125, 0.125)
-texture = ExtResource("1_3vyb7")
+texture_filter = 1
+texture = ExtResource("2_qlg0r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=605204059]
 light_mask = 2
 visibility_layer = 2
-shape = SubResource("RectangleShape2D_5yk5c")
+shape = SubResource("ConvexPolygonShape2D_ebum8")
 
 [node name="Weapon" type="Node2D" parent="." unique_id=1387431096]
 script = ExtResource("3_qlg0r")

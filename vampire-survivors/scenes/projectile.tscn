@@ -3,10 +3,10 @@
 [ext_resource type="Script" uid="uid://dbdji4r7klrvj" path="res://scripts/projectile.gd" id="1_c8fcr"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_vjo1f"]
-size = Vector2(10, 10)
+size = Vector2(16, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5yk5c"]
-size = Vector2(10, 10)
+size = Vector2(16, 16)
 
 [node name="Projectile" type="Area2D" unique_id=1245560687]
 script = ExtResource("1_c8fcr")
@@ -18,6 +18,7 @@ texture = SubResource("PlaceholderTexture2D_vjo1f")
 shape = SubResource("RectangleShape2D_5yk5c")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=689812031]
+rect = Rect2(-12, -12, 24, 24)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_screen_exited"]
