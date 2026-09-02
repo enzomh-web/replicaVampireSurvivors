@@ -1,9 +1,45 @@
 [gd_scene format=3 uid="uid://biq1rnnsd03hm"]
 
 [ext_resource type="Script" uid="uid://dbdji4r7klrvj" path="res://scripts/projectile.gd" id="1_c8fcr"]
+[ext_resource type="Texture2D" uid="uid://cb0hxxoh15tgr" path="res://assets/weapons/projectiles/bananaBullet.png" id="2_q3m7n"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_vjo1f"]
-size = Vector2(16, 16)
+[sub_resource type="Animation" id="Animation_softn"]
+resource_name = "BananaRotation"
+length = 5.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+
+[sub_resource type="Animation" id="Animation_6q2a6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_byeak"]
+_data = {
+&"BananaRotation": SubResource("Animation_softn"),
+&"RESET": SubResource("Animation_6q2a6")
+}
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5yk5c"]
 size = Vector2(16, 16)
@@ -12,7 +48,12 @@ size = Vector2(16, 16)
 script = ExtResource("1_c8fcr")
 
 [node name="Texture" type="Sprite2D" parent="." unique_id=217607829]
-texture = SubResource("PlaceholderTexture2D_vjo1f")
+texture_filter = 1
+texture = ExtResource("2_q3m7n")
+hframes = 8
+
+[node name="Animation" type="AnimationPlayer" parent="." unique_id=153684542]
+libraries/ = SubResource("AnimationLibrary_byeak")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2024600495]
 shape = SubResource("RectangleShape2D_5yk5c")
