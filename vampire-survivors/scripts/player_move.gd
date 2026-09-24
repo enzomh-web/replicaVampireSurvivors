@@ -24,5 +24,5 @@ func take_damage(amount):
 	health -= amount
 	print(amount)
 
-#func _on_damage_body_entered(body: Node2D) -> void:
-	#take_damage(body.damage)
+func _on_damage_body_entered(body: Node2D) -> void:
+	take_damage(body.damage)
