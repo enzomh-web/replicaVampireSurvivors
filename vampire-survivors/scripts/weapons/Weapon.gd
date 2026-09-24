@@ -41,8 +41,6 @@ func _get_angle(index : int) -> float:
 	var angle_step := TAU / data.projectile_count
 	return index * angle_step
 
-
-
 func _spawn_projectile(angle : float) -> void:
 	var direction := Vector2.RIGHT.rotated(angle)
 	

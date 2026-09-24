@@ -5,8 +5,5 @@
 [node name="Main" type="Node2D" unique_id=2077153114]
 
 [node name="Player" parent="." unique_id=1059513943 instance=ExtResource("1_o5qli")]
-position = Vector2(86, 60)
+position = Vector2(480, 270)
 motion_mode = 1
-move_speed = 40.0
-friction = 80.0
-acceleration = 130.0

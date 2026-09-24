@@ -1,9 +1,12 @@
 extends CharacterBody2D
 
-@export_category("Movimentação")
-@export var move_speed : float = 80
-@export var friction : float = 150
-@export var acceleration : float = 250
+@export_category("Movimentacao")
+@export var move_speed : float
+@export var friction : float
+@export var acceleration : float
+
+@export_category("Status")
+@export var health: float
 
 var char_direction : Vector2
 
@@ -16,3 +19,10 @@ func _physics_process(delta):
 		velocity = velocity.move_toward(Vector2.ZERO, friction * delta)
 		
 	move_and_slide()
+
+func take_damage(amount):
+	health -= amount
+	print(amount)
+
+func _on_damage_body_entered(body: Node2D) -> void:
+	take_damage(body.damage)
