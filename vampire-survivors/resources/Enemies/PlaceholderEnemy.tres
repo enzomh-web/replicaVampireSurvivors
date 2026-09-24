@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Enemy" format=3 uid="uid://cpkp3bd5wexuw"]
+
+[ext_resource type="Script" uid="uid://c2qwbf3yv8f81" path="res://scripts/resources_scripts/EnemyType.gd" id="1_dh0mj"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_fjrip"]
+size = Vector2(20, 20)
+
+[resource]
+script = ExtResource("1_dh0mj")
+name = "Placeholder"
+texture = SubResource("PlaceholderTexture2D_fjrip")
+damage = 1.0
+metadata/_custom_type_script = "uid://c2qwbf3yv8f81"
