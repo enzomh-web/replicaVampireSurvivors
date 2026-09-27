@@ -6,7 +6,10 @@ extends CharacterBody2D
 @export var acceleration : float
 
 @export_category("Status")
-@export var health: float
+@export var health: float = 100:
+	set(value):
+		health = value
+		%Health.value = value
 
 var char_direction : Vector2
 
@@ -25,4 +28,9 @@ func take_damage(amount):
 	print(amount)
 
 func _on_damage_body_entered(body: Node2D) -> void:
-	take_damage(body.damage)
+	if "damage" in body:
+		take_damage(body.damage)
+
+func _on_timer_timeout() -> void:
+	%Collision.set_deferred("disabled", true)
+	%Collision.set_deferred("disabled", false)

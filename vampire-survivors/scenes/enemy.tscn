@@ -8,6 +8,8 @@ size = Vector2(20, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o5qli"]
 
 [node name="Enemy" type="CharacterBody2D" unique_id=1649168121]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_7p1mj")
 move_speed = 45.0
 acceleration = 60.0
