@@ -28,8 +28,9 @@ func _physics_process(delta: float) -> void:
 	
 
 #futura lógica de dano
-func _on_body_entered(_body: Node2D) -> void:
-	pass # Replace with function body.
+func _on_body_entered(body: Node2D) -> void:
+	if body.has_method("take_damage"):
+		body.take_damage(_damage)
 
 #futura lógica de sumir ao sair da tela
 func _on_screen_exited() -> void:

@@ -45,6 +45,8 @@ _data = {
 size = Vector2(16, 16)
 
 [node name="Projectile" type="Area2D" unique_id=1245560687]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_c8fcr")
 
 [node name="Texture" type="Sprite2D" parent="." unique_id=217607829]

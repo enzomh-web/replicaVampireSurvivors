@@ -9,5 +9,6 @@ size = Vector2(20, 20)
 script = ExtResource("1_dh0mj")
 name = "Placeholder"
 texture = SubResource("PlaceholderTexture2D_fjrip")
+health = 5.0
 damage = 10.0
 metadata/_custom_type_script = "uid://c2qwbf3yv8f81"
