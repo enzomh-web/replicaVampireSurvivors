@@ -11,8 +11,8 @@ size = Vector2(20, 20)
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_7p1mj")
-move_speed = 45.0
-acceleration = 60.0
+move_speed = 75.0
+acceleration = 90.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2063430456]
 texture = SubResource("PlaceholderTexture2D_7p1mj")
