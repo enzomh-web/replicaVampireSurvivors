@@ -26,10 +26,11 @@ func _physics_process(delta):
 	move_and_slide()
 	
 func take_damage(amount):
+	health -= amount
+	
 	if health <= 0:
 		die()
 	
-	health -= amount
-	
 func die() -> void:
+	
 	queue_free()

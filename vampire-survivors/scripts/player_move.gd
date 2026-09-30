@@ -24,13 +24,13 @@ func _physics_process(delta):
 	move_and_slide()
 
 func take_damage(amount):
+	health -= amount
+	
 	if health <= 0:
 		die()
-	
-	health -= amount
 
 func die() -> void:
-	get_tree().reload_current_scene()
+	get_tree().call_deferred("reload_current_scene")
 
 func _on_damage_body_entered(body: Node2D) -> void:
 	if "damage" in body:

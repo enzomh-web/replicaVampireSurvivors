@@ -14,8 +14,8 @@ points = PackedVector2Array(18, -8, 32, 14, -6, 30, -29, 3, -17, -8)
 script = ExtResource("5_fjrip")
 texture = ExtResource("6_tuyoq")
 damage = 5.0
-cooldown = 2.5
-speed = 190.0
+cooldown = 0.75
+speed = 210.0
 projectile_count = 6
 projectile_interval = 0.2
 metadata/_custom_type_script = "uid://c2mty8w0giur6"
@@ -25,9 +25,9 @@ points = PackedVector2Array(18, -8, 32, 14, -6, 30, -29, 3, -17, -8)
 
 [node name="Player" type="CharacterBody2D" unique_id=1059513943]
 script = ExtResource("1_g2els")
-move_speed = 130.0
-friction = 145.0
-acceleration = 100.0
+move_speed = 150.0
+friction = 100.0
+acceleration = 300.0
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1425793046]
 texture_filter = 1
