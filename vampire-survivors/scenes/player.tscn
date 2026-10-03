@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://fommi7ye0jhf"]
 
 [ext_resource type="Script" uid="uid://bm6k0wfvqax2c" path="res://scripts/player_move.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://ckqku5xlloa34" path="res://assets/characters/cesar.png" id="2_qlg0r"]
+[ext_resource type="Texture2D" uid="uid://ckqku5xlloa34" path="res://assets/characters/Doobie.png" id="2_qlg0r"]
 [ext_resource type="Script" uid="uid://b333lgq02alw2" path="res://scripts/weapons/Weapon.gd" id="3_qlg0r"]
 [ext_resource type="PackedScene" uid="uid://biq1rnnsd03hm" path="res://scenes/projectile.tscn" id="4_tuyoq"]
-[ext_resource type="Script" uid="uid://c2mty8w0giur6" path="res://scripts/resources_scripts/WeaponData.gd" id="5_fjrip"]
+[ext_resource type="Script" uid="uid://c2mty8w0giur6" path="res://resources/resources_scripts/WeaponData.gd" id="5_fjrip"]
 [ext_resource type="Texture2D" uid="uid://cb0hxxoh15tgr" path="res://assets/weapons/projectiles/bananaBullet.png" id="6_tuyoq"]
 
 [sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_ebum8"]
