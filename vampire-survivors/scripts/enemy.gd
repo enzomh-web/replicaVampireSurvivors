@@ -15,7 +15,12 @@ var health: float
 var type: Enemy:
 	set(value):
 		type = value
-		$Sprite2D.texture = value.texture
+		if value.sprite_frames:
+			$Texture.sprite_frames = value.sprite_frames
+		else:
+			$Texture.sprite_frames = load("res://resources/sprite_frames/placeholder_anim.tres")
+		$Texture.play("default")
+		
 		damage = value.damage
 		health = value.health
 
