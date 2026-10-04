@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b85tcfmccajd7"]
+
+[ext_resource type="Texture2D" uid="uid://dgsecmoobuvb" path="res://assets/enemies/PeixePalhaço_Sheet.png" id="1_rkypq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3mr3y"]
+atlas = ExtResource("1_rkypq")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ahxu0"]
+atlas = ExtResource("1_rkypq")
+region = Rect2(64, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3mr3y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ahxu0")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Enemy" format=3 uid="uid://db8ygnjbc0aow"]
+
+[ext_resource type="Script" uid="uid://c2qwbf3yv8f81" path="res://resources/resources_scripts/EnemyType.gd" id="1_tcbcc"]
+[ext_resource type="SpriteFrames" uid="uid://b85tcfmccajd7" path="res://resources/sprite_frames/peixe_palhaco_anim.tres" id="2_7eqvj"]
+
+[resource]
+script = ExtResource("1_tcbcc")
+name = "Peixe Palhaço"
+sprite_frames = ExtResource("2_7eqvj")
+health = 5.0
+damage = 6.0
+metadata/_custom_type_script = "uid://c2qwbf3yv8f81"

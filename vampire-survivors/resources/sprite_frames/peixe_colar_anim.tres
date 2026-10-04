@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cj813vsl4lt3u"]
+
+[ext_resource type="Texture2D" uid="uid://drdlgh6pfmo16" path="res://assets/enemies/PeixeColar_Sheet.png" id="1_ix1o1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gwe2e"]
+atlas = ExtResource("1_ix1o1")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44emd"]
+atlas = ExtResource("1_ix1o1")
+region = Rect2(64, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gwe2e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_44emd")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
