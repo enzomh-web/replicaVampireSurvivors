@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://rchjp8a5jnox"]
+
+[ext_resource type="Texture2D" uid="uid://cb0hxxoh15tgr" path="res://assets/weapons/projectiles/bananaBullet.png" id="1_7gbhr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8puan"]
+atlas = ExtResource("1_7gbhr")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ylmtv"]
+atlas = ExtResource("1_7gbhr")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26huo"]
+atlas = ExtResource("1_7gbhr")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h15pq"]
+atlas = ExtResource("1_7gbhr")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ki5o5"]
+atlas = ExtResource("1_7gbhr")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gok6e"]
+atlas = ExtResource("1_7gbhr")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1sid4"]
+atlas = ExtResource("1_7gbhr")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5uyxx"]
+atlas = ExtResource("1_7gbhr")
+region = Rect2(112, 0, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8puan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ylmtv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26huo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h15pq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ki5o5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gok6e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1sid4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5uyxx")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 18.0
+}]
