@@ -1,8 +1,8 @@
 extends Resource
 class_name  WeaponData
 
-#@export var name : String
-@export var texture : Texture2D
+@export var name : String
+@export var sprite_frames : SpriteFrames
 
 @export var damage : float
 @export var cooldown : float

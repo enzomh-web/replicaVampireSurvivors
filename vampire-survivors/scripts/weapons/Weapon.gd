@@ -47,4 +47,4 @@ func _spawn_projectile(angle : float) -> void:
 	var projectile := data.projectile_scn.instantiate() as Projectile
 	get_tree().current_scene.add_child.call_deferred(projectile)
 	projectile.global_position = global_position
-	projectile.setup(direction, data)
+	projectile.call_deferred("setup", direction, data)
