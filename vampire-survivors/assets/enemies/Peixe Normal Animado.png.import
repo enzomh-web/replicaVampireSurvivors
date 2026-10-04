@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgdewxrndekvx"
-path="res://.godot/imported/Peixe Normal.png-12ecbe580c627b036149c84f1fb58ba7.ctex"
+uid="uid://dtaqf0grlaq8"
+path="res://.godot/imported/Peixe Normal Animado.png-df4c9fc9211b099445fe601e4caca9c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enemies/Peixe Normal.png"
-dest_files=["res://.godot/imported/Peixe Normal.png-12ecbe580c627b036149c84f1fb58ba7.ctex"]
+source_file="res://assets/enemies/Peixe Normal Animado.png"
+dest_files=["res://.godot/imported/Peixe Normal Animado.png-df4c9fc9211b099445fe601e4caca9c3.ctex"]
 
 [params]
 
@@ -37,4 +37,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
