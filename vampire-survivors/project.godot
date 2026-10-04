@@ -20,13 +20,6 @@ window/size/viewport_width=960
 window/size/viewport_height=540
 window/stretch/mode="canvas_items"
 
-[file_customization]
-
-folder_colors={
-"res://scenes/": "red",
-"res://scripts/": "red"
-}
-
 [input]
 
 move_left={
