@@ -3,13 +3,14 @@
 [ext_resource type="PackedScene" uid="uid://dmg45jp3eiui1" path="res://scenes/spawner.tscn" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://fommi7ye0jhf" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://c2qwbf3yv8f81" path="res://resources/resources_scripts/EnemyType.gd" id="2_tbgi4"]
+[ext_resource type="Resource" uid="uid://brswcusuidrfk" path="res://resources/enemies/GaivotaNormal.tres" id="3_tbgi4"]
 [ext_resource type="Resource" uid="uid://reabu8dddhir" path="res://resources/enemies/PeixeNormal.tres" id="4_o6xl0"]
 
 [node name="Main" type="Node2D" unique_id=2077153114]
 
 [node name="Spawner" parent="." unique_id=160585704 node_paths=PackedStringArray("player") instance=ExtResource("1_0wfyh")]
 player = NodePath("../Player")
-enemy_types = Array[ExtResource("2_tbgi4")]([ExtResource("4_o6xl0")])
+enemy_types = Array[ExtResource("2_tbgi4")]([ExtResource("3_tbgi4"), ExtResource("4_o6xl0")])
 
 [node name="Player" parent="." unique_id=1059513943 instance=ExtResource("1_o5qli")]
 position = Vector2(480, 270)
