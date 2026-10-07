@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtaqf0grlaq8"
-path="res://.godot/imported/Peixe Normal Animado.png-df4c9fc9211b099445fe601e4caca9c3.ctex"
+path="res://.godot/imported/Peixe Normal_Sheet.png-b6bc0c60272239534e93365a1d9ff72e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enemies/Peixe Normal Animado.png"
-dest_files=["res://.godot/imported/Peixe Normal Animado.png-df4c9fc9211b099445fe601e4caca9c3.ctex"]
+source_file="res://assets/enemies/Peixe Normal_Sheet.png"
+dest_files=["res://.godot/imported/Peixe Normal_Sheet.png-b6bc0c60272239534e93365a1d9ff72e.ctex"]
 
 [params]
 

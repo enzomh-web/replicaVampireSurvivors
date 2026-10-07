@@ -12,8 +12,7 @@ move_speed = 75.0
 acceleration = 90.0
 
 [node name="Texture" type="AnimatedSprite2D" parent="." unique_id=1781467696]
-frame = 1
-frame_progress = 0.21745497
+frame_progress = 0.08434037
 
 [node name="Collision" type="CollisionShape2D" parent="." unique_id=1331309551]
 shape = SubResource("RectangleShape2D_o5qli")
