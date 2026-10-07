@@ -5,12 +5,15 @@
 [ext_resource type="Script" uid="uid://c2qwbf3yv8f81" path="res://resources/resources_scripts/EnemyType.gd" id="2_tbgi4"]
 [ext_resource type="Resource" uid="uid://brswcusuidrfk" path="res://resources/enemies/GaivotaNormal.tres" id="3_tbgi4"]
 [ext_resource type="Resource" uid="uid://reabu8dddhir" path="res://resources/enemies/PeixeNormal.tres" id="4_o6xl0"]
+[ext_resource type="Resource" uid="uid://cdxj4x5oc1f4x" path="res://resources/enemies/PeixeColar.tres" id="5_tipki"]
+[ext_resource type="Resource" uid="uid://db8ygnjbc0aow" path="res://resources/enemies/PeixePalhaco.tres" id="6_85g3d"]
+[ext_resource type="Resource" uid="uid://b5cv1ufqr0hof" path="res://resources/enemies/PeixeSutia.tres" id="7_choun"]
 
 [node name="Main" type="Node2D" unique_id=2077153114]
 
 [node name="Spawner" parent="." unique_id=160585704 node_paths=PackedStringArray("player") instance=ExtResource("1_0wfyh")]
 player = NodePath("../Player")
-enemy_types = Array[ExtResource("2_tbgi4")]([ExtResource("3_tbgi4"), ExtResource("4_o6xl0")])
+enemy_types = Array[ExtResource("2_tbgi4")]([ExtResource("4_o6xl0"), ExtResource("3_tbgi4"), ExtResource("5_tipki"), ExtResource("6_85g3d"), ExtResource("7_choun")])
 
 [node name="Player" parent="." unique_id=1059513943 instance=ExtResource("1_o5qli")]
 position = Vector2(480, 270)

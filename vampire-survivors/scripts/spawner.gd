@@ -27,7 +27,7 @@ var second: int:
 func spawn(pos: Vector2):
 	var enemy_instance = enemy.instantiate()
 	
-	enemy_instance.type = enemy_types[0] # futura logica de waves aqui
+	enemy_instance.type = enemy_types[min(minute, enemy_types.size() - 1)] # futura logica de waves aqui
 	
 	enemy_instance.position = pos
 	enemy_instance.player_reference = player

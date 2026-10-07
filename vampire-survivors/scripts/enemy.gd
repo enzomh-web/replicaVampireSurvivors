@@ -27,6 +27,11 @@ var type: Enemy:
 func _physics_process(delta):
 	direction = (player_reference.position - position).normalized()
 	velocity = velocity.move_toward(direction * move_speed, acceleration * delta)
+	
+	if direction.x < Vector2.ZERO.x:
+		$Texture.flip_h = false
+	else:
+		$Texture.flip_h = true
 
 	move_and_slide()
 	
