@@ -4,9 +4,13 @@ extends Node2D
 @export var player: CharacterBody2D
 @export var enemy: PackedScene
 
+#@export_category("Wave")
+#@export var waves: Array[Wave]
+
 var spawn_distance: float = 500
 
 @export var enemy_types: Array[Enemy]
+var wave_index: int = 0
 
 var minute: int:
 	set(value):
@@ -23,6 +27,9 @@ var second: int:
 			second -= 60
 			minute += 1
 		%Second.text = str(second).lpad(2, '0')
+
+#func spawn_wave(enemies: Array[Enemy], proportion: Array[float], boss: Enemy = null):
+	#pass
 
 func spawn(pos: Vector2):
 	var enemy_instance = enemy.instantiate()
