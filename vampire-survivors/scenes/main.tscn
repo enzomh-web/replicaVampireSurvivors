@@ -13,7 +13,7 @@
 
 [node name="Spawner" parent="." unique_id=160585704 node_paths=PackedStringArray("player") instance=ExtResource("1_0wfyh")]
 player = NodePath("../Player")
-enemy_types = Array[ExtResource("2_tbgi4")]([ExtResource("4_o6xl0"), ExtResource("3_tbgi4"), ExtResource("5_tipki"), ExtResource("6_85g3d"), ExtResource("7_choun")])
+enemy_types = Array[ExtResource("2_tbgi4")]([ExtResource("5_tipki"), ExtResource("6_85g3d"), ExtResource("7_choun"), ExtResource("4_o6xl0"), ExtResource("3_tbgi4")])
 
 [node name="Player" parent="." unique_id=1059513943 instance=ExtResource("1_o5qli")]
 position = Vector2(480, 270)

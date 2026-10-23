@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtaqf0grlaq8"
-path="res://.godot/imported/Peixe Normal_Sheet.png-b6bc0c60272239534e93365a1d9ff72e.ctex"
+uid="uid://b5di047pt8sqf"
+path="res://.godot/imported/PeixePalhaco_Sheet.png-0deb2e3b0ce67e92e8fd5dd27d4a3552.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enemies/Peixe Normal_Sheet.png"
-dest_files=["res://.godot/imported/Peixe Normal_Sheet.png-b6bc0c60272239534e93365a1d9ff72e.ctex"]
+source_file="res://assets/enemies/PeixePalhaco_Sheet.png"
+dest_files=["res://.godot/imported/PeixePalhaco_Sheet.png-0deb2e3b0ce67e92e8fd5dd27d4a3552.ctex"]
 
 [params]
 

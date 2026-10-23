@@ -10,6 +10,7 @@ extends CharacterBody2D
 	set(value):
 		health = value
 		%Health.value = value
+@export var is_invincible: bool = false
 
 @onready var sprite : Sprite2D = $Sprite
 @onready var anim_player : AnimationPlayer = $AnimationPlayer
@@ -30,10 +31,11 @@ func _physics_process(delta):
 	_update_animation()
 
 func take_damage(amount):
-	health -= amount
-	
-	if health <= 0:
-		die()
+	if not is_invincible:
+		health -= amount
+		
+		if health <= 0:
+			die()
 
 func die() -> void:
 	get_tree().call_deferred("reload_current_scene")
