@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://c7k0ayennctff"]
+
+[ext_resource type="Texture2D" uid="uid://dgiy8n5llyekr" path="res://assets/enemies/bosses/Patolino_Sheet.png" id="1_aa5kr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hkljo"]
+atlas = ExtResource("1_aa5kr")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qov1c"]
+atlas = ExtResource("1_aa5kr")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tkxd"]
+atlas = ExtResource("1_aa5kr")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tfox8"]
+atlas = ExtResource("1_aa5kr")
+region = Rect2(192, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hkljo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qov1c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4tkxd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tfox8")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
