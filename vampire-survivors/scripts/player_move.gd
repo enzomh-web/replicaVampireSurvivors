@@ -23,7 +23,9 @@ func _physics_process(delta):
 	
 	if char_direction != Vector2.ZERO:
 		velocity = velocity.move_toward(char_direction * move_speed, acceleration * delta)
-		last_char_direction = char_direction
+		last_char_direction = Vector2(
+			char_direction.x if char_direction.x != 0 else last_char_direction.x,
+			char_direction.y if char_direction.y != 0 else last_char_direction.y)
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, friction * delta)
 		
@@ -50,8 +52,9 @@ func _on_timer_timeout() -> void:
 
 func _update_animation() -> void:
 	var is_moving_x : bool = (char_direction.x != 0)
+	var is_moving : bool = (char_direction != Vector2.ZERO)
 	var dir_x := char_direction.x if is_moving_x else last_char_direction.x
-	var state := "walk" if is_moving_x else "idle"
+	var state := "walk" if is_moving else "idle"
 	var side := "left" if dir_x < 0 else "right"
 	_play_anim_safe("%s_%s" % [state, side])
 			

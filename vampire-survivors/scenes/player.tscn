@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://fommi7ye0jhf"]
 
 [ext_resource type="Script" uid="uid://bm6k0wfvqax2c" path="res://scripts/player_move.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://cjhjr3ikxcunb" path="res://assets/characters/doobie/Doobie_Sheet.png" id="2_dqkch"]
+[ext_resource type="Texture2D" uid="uid://momn0v5gdsrp" path="res://assets/characters/doobie/Doobie_Sheet.png" id="2_dqkch"]
 [ext_resource type="Script" uid="uid://b333lgq02alw2" path="res://scripts/weapons/Weapon.gd" id="3_qlg0r"]
 [ext_resource type="Resource" uid="uid://c8wtupto7niva" path="res://resources/weapons/coltnana.tres" id="4_dqkch"]
 

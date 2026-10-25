@@ -5,5 +5,8 @@
 
 [resource]
 script = ExtResource("1_qgg8l")
+name = "patolino"
 sprite_frames = ExtResource("2_lrw0x")
+health = 5.0
+damage = 5.0
 metadata/_custom_type_script = "uid://c2qwbf3yv8f81"
