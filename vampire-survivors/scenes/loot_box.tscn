@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bsrs0tdy4878y"]
 
-[ext_resource type="Script" uid="uid://b3vtqn3vsrgjy" path="res://scenes/loot_box.gd" id="1_i2dow"]
+[ext_resource type="Script" uid="uid://b3vtqn3vsrgjy" path="res://scripts/loot_box.gd" id="1_i2dow"]
 [ext_resource type="SpriteFrames" uid="uid://5nt5bxds75g7" path="res://resources/sprite_frames/placeholder_anim.tres" id="1_naqu1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ebum8"]
