@@ -3,6 +3,6 @@ class_name Wave
 
 @export var wave_enemies : Array[Enemy]
 @export var proportion : Array[float]
-@export var density : float
+@export_range(0.01, 1.0, 0.1, "or_greater") var density : float
 @export var boss : Enemy
-@export var boss_apparition : int
+@export_range(0, 60, 5) var boss_apparition : int

@@ -12,7 +12,7 @@
 player = NodePath("../Player")
 waves = Array[ExtResource("2_jyhfs")]([ExtResource("3_tbgi4"), ExtResource("5_o6xl0")])
 
-[node name="Player" parent="." unique_id=1059513943 instance=ExtResource("1_o5qli")]
+[node name="Player" parent="." unique_id=1059513943 groups=["Player"] instance=ExtResource("1_o5qli")]
 position = Vector2(480, 270)
 motion_mode = 1
 is_invincible = true

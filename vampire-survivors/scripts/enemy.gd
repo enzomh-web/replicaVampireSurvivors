@@ -7,12 +7,14 @@ extends CharacterBody2D
 
 @export_category("Referencias")
 @export var player_reference: CharacterBody2D
+var loot_box: PackedScene = load("res://scenes/loot_box.tscn")
 
 @onready var texture: AnimatedSprite2D = $Texture
 
 var direction: Vector2
 var damage: float
 var health: float
+
 
 var is_boss: bool = false:
 	set(value):
@@ -50,5 +52,13 @@ func take_damage(amount):
 		die()
 	
 func die() -> void:
-	
+	if is_boss:
+		spawn_loot_box()
+		
 	queue_free()
+
+func spawn_loot_box() -> void:
+	if loot_box:
+		var box_instance = loot_box.instantiate()
+		get_parent().call_deferred("add_child", box_instance)
+		box_instance.global_position = global_position

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bsrs0tdy4878y"]
+
+[ext_resource type="Script" uid="uid://b3vtqn3vsrgjy" path="res://scenes/loot_box.gd" id="1_i2dow"]
+[ext_resource type="SpriteFrames" uid="uid://5nt5bxds75g7" path="res://resources/sprite_frames/placeholder_anim.tres" id="1_naqu1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ebum8"]
+
+[node name="LootBox" type="Area2D" unique_id=1086676245]
+script = ExtResource("1_i2dow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1968681079]
+shape = SubResource("RectangleShape2D_ebum8")
+
+[node name="Texture" type="AnimatedSprite2D" parent="." unique_id=1726659767]
+sprite_frames = ExtResource("1_naqu1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
