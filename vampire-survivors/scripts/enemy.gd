@@ -14,6 +14,14 @@ var direction: Vector2
 var damage: float
 var health: float
 
+var is_boss: bool = false:
+	set(value):
+		is_boss = value
+		if value:
+			var outline = load("res://shaders/outline.tres")
+			$Texture.material = outline.duplicate()
+			$Texture.material.set_shader_parameter("outline_color", type.boss_outline_color)
+
 var type: Enemy:
 	set(value):
 		type = value

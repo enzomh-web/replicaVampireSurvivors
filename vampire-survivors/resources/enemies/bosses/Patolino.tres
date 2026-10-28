@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Enemy" format=3 uid="uid://cbvngs1ioflyd"]
+
+[ext_resource type="Script" uid="uid://c2qwbf3yv8f81" path="res://resources/resources_scripts/EnemyType.gd" id="1_d1tuc"]
+[ext_resource type="SpriteFrames" uid="uid://c7k0ayennctff" path="res://resources/sprite_frames/patolino.tres" id="2_u3j3f"]
+
+[resource]
+script = ExtResource("1_d1tuc")
+name = "patolino"
+sprite_frames = ExtResource("2_u3j3f")
+health = 100.0
+damage = 10.0
+is_boss = true
+boss_outline_color = Color(4.1392445e-06, 0.99456507, 0.32877076, 1)
+metadata/_custom_type_script = "uid://c2qwbf3yv8f81"

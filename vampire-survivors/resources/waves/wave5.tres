@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Wave" format=3 uid="uid://cvub0ud2at4gq"]
+
+[ext_resource type="Resource" uid="uid://cbvngs1ioflyd" path="res://resources/enemies/bosses/Patolino.tres" id="1_46yob"]
+[ext_resource type="Script" uid="uid://bjlikx6i2gynh" path="res://resources/resources_scripts/WaveData.gd" id="2_8hf0v"]
+[ext_resource type="Script" uid="uid://c2qwbf3yv8f81" path="res://resources/resources_scripts/EnemyType.gd" id="3_momni"]
+[ext_resource type="Resource" uid="uid://brswcusuidrfk" path="res://resources/enemies/GaivotaNormal.tres" id="4_op35x"]
+[ext_resource type="Resource" uid="uid://db8ygnjbc0aow" path="res://resources/enemies/PeixePalhaco.tres" id="5_8hf0v"]
+
+[resource]
+script = ExtResource("2_8hf0v")
+wave_enemies = Array[ExtResource("3_momni")]([ExtResource("4_op35x"), ExtResource("5_8hf0v")])
+proportion = Array[float]([0.7, 0.3])
+density = 0.5
+boss = ExtResource("1_46yob")
+boss_apparition = 30
+metadata/_custom_type_script = "uid://bjlikx6i2gynh"
