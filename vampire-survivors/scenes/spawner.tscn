@@ -2,10 +2,13 @@
 
 [ext_resource type="Script" uid="uid://c652ibkwl4d77" path="res://scripts/spawner.gd" id="1_2vbf6"]
 [ext_resource type="PackedScene" uid="uid://3eopitwhthjj" path="res://scenes/enemy.tscn" id="2_ik2nu"]
+[ext_resource type="Script" uid="uid://bjlikx6i2gynh" path="res://resources/resources_scripts/WaveData.gd" id="3_tx2ig"]
+[ext_resource type="Resource" uid="uid://ccb7pe1alhe77" path="res://resources/waves/wave6.tres" id="4_6bbd6"]
 
 [node name="Spawner" type="Node2D" unique_id=160585704]
 script = ExtResource("1_2vbf6")
 enemy = ExtResource("2_ik2nu")
+waves = Array[ExtResource("3_tx2ig")]([ExtResource("4_6bbd6")])
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=579898978]
 
