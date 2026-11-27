@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://3g50m7knp3yk"]
+
+[ext_resource type="Texture2D" uid="uid://d1nunq8xqt1ca" path="res://assets/lootbox/Boia_Sheet.png" id="1_orhso"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_orhso"]
+atlas = ExtResource("1_orhso")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nmn0h"]
+atlas = ExtResource("1_orhso")
+region = Rect2(64, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_orhso")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nmn0h")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
