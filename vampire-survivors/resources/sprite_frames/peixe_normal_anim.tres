@@ -1,12 +1,12 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://difnfpxtx18fy"]
 
-[ext_resource type="Texture2D" uid="uid://jfq8akn1f3kc" path="res://assets/enemies/PeixeNormal_Sheet.png" id="1_sh2ae"]
+[ext_resource type="Texture2D" uid="uid://0ffhr2n04h82" path="res://assets/enemies/PeixeNormal_Sheet.png" id="1_sh2ae"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_81wt1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_sh2ae"]
 atlas = ExtResource("1_sh2ae")
 region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_56cqg"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_81wt1"]
 atlas = ExtResource("1_sh2ae")
 region = Rect2(64, 0, 64, 64)
 
@@ -14,10 +14,10 @@ region = Rect2(64, 0, 64, 64)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_81wt1")
+"texture": SubResource("AtlasTexture_sh2ae")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_56cqg")
+"texture": SubResource("AtlasTexture_81wt1")
 }],
 "loop": 1,
 "name": &"default",
