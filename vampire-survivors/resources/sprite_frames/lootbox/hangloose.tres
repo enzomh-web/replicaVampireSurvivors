@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cor10jv1e2gkm"]
+
+[ext_resource type="Texture2D" uid="uid://hwmh3qcrmdoj" path="res://assets/lootbox/HangLoose_Sheet.png" id="1_e3p7a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wo86g"]
+atlas = ExtResource("1_e3p7a")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qmjmp"]
+atlas = ExtResource("1_e3p7a")
+region = Rect2(64, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wo86g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qmjmp")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
