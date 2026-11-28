@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="Enemy" format=3 uid="uid://e4rqh3qj2vii"]
+
+[ext_resource type="Script" uid="uid://c2qwbf3yv8f81" path="res://resources/resources_scripts/EnemyType.gd" id="1_23rel"]
+[ext_resource type="Texture2D" uid="uid://bddqas4hap8ib" path="res://assets/enemies/AguaViva_Sheet.png" id="2_c85iy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1eakb"]
+atlas = ExtResource("2_c85iy")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b822b"]
+atlas = ExtResource("2_c85iy")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kswaq"]
+atlas = ExtResource("2_c85iy")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ci8m6"]
+atlas = ExtResource("2_c85iy")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c85iy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1eakb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b822b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kswaq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ci8m6")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 7.0
+}]
+
+[resource]
+script = ExtResource("1_23rel")
+sprite_frames = SubResource("SpriteFrames_c85iy")
+metadata/_custom_type_script = "uid://c2qwbf3yv8f81"
